@@ -15,3 +15,5 @@ while chance > 0:
     print("You have " + str(chance) + " chances left")
     chance = chance - 1
     guess = input("Guess a letter: ")
+
+print('test')
