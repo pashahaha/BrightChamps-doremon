@@ -1,5 +1,5 @@
-import math #module
-import newmodule
+import math
+import newmodule # type: ignore
 
 x = math.sqrt(100)
 print(x)
