@@ -1,0 +1,33 @@
+body{
+    background: black;
+}
+
+#MyClockDisplay{
+    transition: transform 0.5s ease-in-out;
+    letter-spacing: 7px;
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(109, 220, 237);
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px dashed yellow;
+    border-radius: 20px;
+    width: 45%;
+    margin: auto;
+}
+
+#MyClockDisplay:hover{
+    transform: scale(1.2);
+    background-color: rgb(1, 63, 104);
+    color: whitesmoke;
+    border: 2px dashed rgb(206, 220, 223);
+}
+
+h1,h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: yellow;
+}
