@@ -19,7 +19,7 @@ function showTime(){
     s = (s<10) ? "0" + s : s;
 
     var time = h + ":" + m + ":" + s + " " + session;
-    consple.log('current time: ' + time);
+    console.log('current time: ' + time);
 
     document.getElementById("MyClockDisplay").innerText = time;
 
