@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     color: #EDE8DC;
-     background: radial-gradient(circle, #E7CCCC, #A5B68D);
+    background: radial-gradient(circle, #E7CCCC, #A5B68D);
 
 }
 
@@ -45,23 +45,74 @@
     padding: 10px;
     font-size: 1.5em;
     box-shadow: inset 0 0 5px #f5b83e;
+    float: right;
 }
 
-.keys, .top{
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.keys,
+.top {
     overflow: hidden;
     justify-content: space-between;
 }
 
-.keys span, #clear{
+.keys span,
+#clear {
     user-select: none;
     cursor: pointer;
     border-radius: 3px;
     width: 60px;
     height: 60px;
-    background-color: #EDE8DC;  
-    color: #fdfdfd;
+
     position: relative;
     text-align: center;
     line-height: 60px;
     float: left;
+    background-color: #f5b83e;
+
+    color: #000;
+}
+
+.keys span.operator {
+    background-color: #f5b83e;
+}
+
+.keys span.eval {
+    background: #fdfdfd;
+    box-shadow: 0px 4px #4a3e31;
+    color: #4a3e31;
+}
+
+.keys span.eval:active {
+    box-shadow: inset 0px 4px #c66702;
+    top: 4px;
+}
+
+.key span #clear {
+    background-color: #f5b83e;
+    color: #4a3e31;
+    transition: all 0.3s ease;
+}
+
+.keys span.eval {
+    background-color: #f5b83e;
+
+    color: #000;
+}
+
+.keys span:hover {
+    background-color: #fdfdfd;
+    color: #4a3e31;
+    box-shadow: 0px 4px #f2f0ed;
+
+}
+
+.keys span:active {
+    box-shadow: inset 0px 4px #5f70ec;
+    top: 4px;
 }
